@@ -1,0 +1,28 @@
+p {
+  margin-bottom: 10px; /* space between paragraph and input */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Optional, for better visibility */
+  }
+
+
+  #text, #text2 {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  #text:focus, #text2:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+

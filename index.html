@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="vertical-container">
+    <p>Give me a pizza name</p>
+    <input id="text" autofocus>
+  </div>
+    <script>
+        document.getElementById('text').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                localStorage.setItem('pizzaName', document.getElementById('text').value);
+                location.href = 'page2challenge.html'
+            }
+        })
+    </script>
+</body>
+</html>
